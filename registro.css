@@ -1,0 +1,52 @@
+body{
+ background-image: url("https://fondosmil.co/fondo/36847.jpg");
+}
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+form input {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #198754; 
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #145c32;
+}
+.miElemento{
+    animation-name: ejemploaniamcion;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    display: block;
+    margin: 0 auto;
+    width: 150px
+  }
+  @keyframes ejemploaniamcion{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(100px)
+    }
+  }

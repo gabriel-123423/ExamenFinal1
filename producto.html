@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gabriel Store</title>
+  <link rel="stylesheet" href="/producto.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  
+
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+ 
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/index.html"><i class="bi bi-basket2-fill"></i> Gabriel Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/producto.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="/servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contacto.html">Contáctenos</a></li>
+          <li class="nav-item"><a class="nav-link" href="/registro.html">Registro</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div class="contenedor">
+    <div class="titulo-animado">
+        <h2 class="titulo-animado" >Lista de Productos</h2>
+      </div>
+  <table class="tabla-productos">
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Descripción</th>
+        <th>Precio</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>God of War Ragnarok (PS5)</td>
+        <td>God of War Ragnarök es un juego de acción y aventura en el que los jugadores se meten en la piel de Kratos y su hijo.</td>
+        <td>S/ 379.00</td>
+        <td><button onclick="comprar('God of War Ragnarok (PS5)')">Comprar</button></td>
+      </tr>
+      <tr>
+        <td>God of War Ragnarok (PS5)</td>
+        <td>God of War Ragnarök es un juego de acción y aventura en el que los jugadores se meten en la piel de Kratos y su hijo.</td>
+        <td>S/ 279.00</td>
+        <td><button onclick="comprar('God of War Ragnarok (PS4)')">Comprar</button></td>
+      </tr>
+      <tr>
+        <td>Uncharted 4 (PS5)</td>
+        <td>El final de un ladrón</td>
+        <td>S/ 200.00</td>
+        <td><button onclick="comprar('Uncharted 4 (PS5)')">Comprar</button></td>
+      </tr>
+      <tr>
+        <td>Uncharted 4 (PS4)</td>
+        <td>El final de un ladrón</td>
+        <td>S/ 150.00</td>
+        <td><button onclick="comprar('Uncharted 4 (PS4)')">Comprar</button></td>
+      </tr>
+      <tr>
+        <td>Ratchet & Clank: Una dimensión aparte (PS5)</td>
+        <td>¡Ayúdalos a derrotar a un malvado emperador de otra realidad saltando entre mundos cargados de acción y más allá a hipervelocidad!</td>
+        <td>S/ 400.00</td>
+        <td><button onclick="comprar('Ratchet & Clank: Una dimensión aparte (PS5)')">Comprar</button></td>
+      </tr>
+      
+      <tr>
+        <td>Mortal Kombat 11 (PS5)</td>
+        <td>Mortal Kombat ha regresado mejor que nunca en esta entrega de la icónica saga.</td>
+        <td>S/ 350.00</td>
+        <td><button onclick="comprar('Mortal Kombat 11 (PS5)')">Comprar</button></td>
+      </tr>
+      <tr>
+        <td>Mortal Kombat 11 (PS4)</td>
+        <td>Mortal Kombat ha regresado mejor que nunca en esta entrega de la icónica saga.</td>
+        <td>S/ 260.00</td>
+        <td><button onclick="comprar('Mortal Kombat 11 (PS4)')">Comprar</button></td>
+      </tr>
+
+
+     
+    </tbody>
+  </table>
+
+  <div id="mensajeCompra" class="mensaje-oculto"></div>
+
+      
+  <div class="modal fade" id="ModalRegistrarProducto" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+      </div>
+    </div>
+  </div>
+</div>
+<h3 class="subtitulo">Juegos recomendados</h3>
+<div class="galeria-juegos">
+  <img src="https://storegamesperu.com/files/images/productos/1643412622-god-of-war-ragnarok-ps4-pre-orden.jpg" alt="Juego 1">
+  <img src="https://storegamesperu.com/files/images/productos/1670879846-god-of-war-ragnarok-deluxe-edition-ps5-0.jpg" alt="Juego 2">
+  <img src="https://storegamesperu.com/files/images/productos/1576686876-uncharted-4-el-desenlace-del-ladron-ps4.jpg" alt="Juego 3">
+  <img src="https://gamescenter.pe/wp-content/uploads/2024/08/Uncharted-4-A-Thiefs-End-PS5N.jpg" alt="Juego 4">
+  <img src="https://image.api.playstation.com/vulcan/ap/rnd/202101/2921/HMoV5LrlrOPvRvo0ASyQD4Es.jpg" alt="Juego 5">
+  <img src="https://storegamesperu.com/files/images/productos/1606594052-mortal-kombat-11-ps5.jpg" alt="Juego 6">
+   <img src="https://storegamesperu.com/files/images/productos/1605819293-mortal-kombat-11-ultimate-ps4.jpg" alt="Juego 7">
+</div>
+
+
+  
+
+  
+  <script src="/java.js"></script>
+
+
+ 
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+body{
+ background-image: url("https://fondosmil.co/fondo/36847.jpg");
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+}
+
+table{
+    margin-top: 20px;
+    
+}
+  @keyframes cambioColor {
+    0%   { color: #ff6f61; }
+    25%  { color: #ab47bc; }
+    50%  { color: #509edd; }
+    75%  { color: #66bb6a; }
+    100% { color: #ef5350; }
+  }
+  .titulo {
+    
+    margin-bottom: 15px;
+    animation: cambioColor 4s infinite alternate;
+    text-shadow: 1px 1px 2px gray;
+  }
+  .titulo1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    animation: cambioColor 4s infinite alternate;
+    text-shadow: 1px 1px 2px gray;
+  }
+  p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    animation: textoAnimado 5s infinite alternate;
+    transition: all 0.5s linear;
+    
+  }
+  ul{
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    animation: textoAnimado 5s infinite alternate;
+    transition: all 0.5s linear;
+  }
+  .element {
+background: grey;
+width: 1500px;
+height: 150px;
+animation: change-color 2s 0s infinite;
+text-align: center;
+}
+@keyframes change-color {
+0% { background: red; } 
+50% { background: yellow; width: 400px;} 
+100% { background: green; } 
+}

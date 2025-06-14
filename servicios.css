@@ -1,0 +1,44 @@
+body{
+ background-image: url("https://fondosmil.co/fondo/36847.jpg");
+}
+
+.servicio-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 15px;
+  }
+  
+  .servicio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+.contenedor-box {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 20px; 
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: grey;
+  transition: 1s linear;
+  animation: animarCaja 2s ease forwards; 
+  border-radius: 0px;
+}
+
+
+
+@keyframes animarCaja {
+  0% {
+    border-radius: 0px;
+    background-color: grey;
+    border: none;
+  }
+  100% {
+    border-radius: 50%;
+    background-color: rgb(142, 248, 252);
+    border: 5px solid rgb(236, 144, 164);
+  }
+}
